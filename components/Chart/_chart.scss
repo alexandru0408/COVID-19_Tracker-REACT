@@ -1,0 +1,18 @@
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: rgba(255, 255, 255, 0.9);
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .chart {
+    width: 70%;
+    height: 100%;
+  }
+}

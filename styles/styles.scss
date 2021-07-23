@@ -1,0 +1,18 @@
+@use 'reset';
+@use 'home';
+@use '../components/Cards/cards';
+@use '../components/Cards/Card/card';
+@use '../components/Chart/chart';
+@use '../components/CountryPicker/country-picker';
+
+html,
+body {
+  background: rgba(255, 255, 255, 0.9);
+  // background: rgb(242, 19, 19);
+  // background: linear-gradient(
+  //   132deg,
+  //   rgba(242, 19, 19, 1) 0%,
+  //   rgba(165, 169, 244, 1) 0%,
+  //   rgba(9, 9, 121, 1) 100%
+  // );
+}
