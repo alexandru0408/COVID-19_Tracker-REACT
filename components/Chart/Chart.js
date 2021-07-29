@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { fetchDailyData } from "../util/fetchData";
 import { Line, Bar } from "react-chartjs-2";
-import { useStateContext } from "../GlobalStateProvider";
 
 const Chart = ({ data, country }) => {
   const [dailyData, setDailyData] = useState([]);
-  const globalState = useStateContext();
 
   useEffect(() => {
     const getDailyData = async () => {
@@ -13,7 +11,7 @@ const Chart = ({ data, country }) => {
     };
     console.log("dailyData", dailyData);
     getDailyData();
-  }, []);
+  }, [setDailyData]);
   console.log("country", country);
   const lineChart = dailyData.length ? (
     <Line
