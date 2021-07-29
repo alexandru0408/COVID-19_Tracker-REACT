@@ -1,19 +1,8 @@
-import { useEffect, useState } from "react";
-
 import Card from "./Card/Card";
-import { fetchData } from "../util/fetchData";
 import { useStateContext } from "../GlobalStateProvider";
 
 const Cards = ({ data }) => {
-  // const [data, setData] = useState({});
   const globalState = useStateContext();
-
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     setData(await fetchData());
-  //   };
-  //   getData();
-  // }, [setData]);
 
   const { confirmed, recovered, deaths, lastUpdate } = data;
   console.log("globalState.data", globalState.data);
