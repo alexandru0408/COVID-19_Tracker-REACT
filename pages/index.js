@@ -1,4 +1,4 @@
-import Cards from "../components/Cards/cards";
+import Cards from "../components/Cards/Cards";
 import CountryPicker from "../components/CountryPicker/CountryPicker";
 import Chart from "../components/Chart/Chart";
 import { useStateContext } from "../components/GlobalStateProvider";
